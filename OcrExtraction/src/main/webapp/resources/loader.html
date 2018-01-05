@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background: #98bcd4;
+	font-family: cursive;
+}
+
+h3 {
+	position: relative;
+	color: rgba(0, 0, 0, .3);
+}
+
+h3:before {
+	content: attr(data-text);
+	position: absolute;
+	overflow: hidden;
+	max-width: 100%;
+	white-space: nowrap;
+	color: #fff;
+	animation: loading 10s linear;
+}
+
+@
+keyframes loading { 0% {
+	max-width: 0;
+}
+}
+
+</style>
+</head>
+<body>
+		<h3 style="margin: 21% 0% 0% 17%;"
+			data-text="Please wait in patience, Trying to get information from image">Please
+			wait in patience, Trying to get information from image</h3>
+</body>
+</html>
